@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="africaButton" destination="Z7j-j5-JaA" id="1gg-ff-Vrj"/>
+                <outlet property="caesarButton" destination="U0d-vR-0Ew" id="bvs-VJ-nf2"/>
+                <outlet property="deleteButton" destination="k3G-uD-piK" id="Yxv-FI-fMb"/>
+                <outlet property="feminismButton" destination="C2m-5z-gTu" id="FVh-7h-B8o"/>
+                <outlet property="mouseButton" destination="TTm-b3-Bce" id="nfX-CK-Vkf"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
+                <outlet property="octoberButton" destination="T2X-hj-IUt" id="bDc-MQ-ugq"/>
+                <outlet property="psychicButton" destination="6Oa-27-6bA" id="xEZ-0n-QoA"/>
+                <outlet property="punchButton" destination="n2D-ct-hDV" id="XZf-Wq-ih3"/>
+                <outlet property="rainButton" destination="Gai-EE-J3k" id="HcC-AA-vcB"/>
+                <outlet property="returnButton" destination="L6d-em-Brm" id="C6z-d4-vYr"/>
+                <outlet property="shoppingButton" destination="5Yi-3f-67o" id="dF2-fy-HLJ"/>
+                <outlet property="sickButton" destination="ZvR-ku-iNG" id="9Ko-Do-YY3"/>
+                <outlet property="spaceButton" destination="mMY-t3-rXt" id="ZGB-Nl-nNd"/>
+                <outlet property="threePoundsButton" destination="eMq-9q-TEL" id="yKj-Z3-bN7"/>
+                <outlet property="wednesdayButton" destination="0JI-mM-5M2" id="4wh-ao-8ih"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -14,22 +29,277 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
                     <rect key="frame" x="8" y="162" width="30" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="eu0-xj-Jov"/>
                         <constraint firstAttribute="height" constant="30" id="rFT-bm-aBM"/>
                     </constraints>
-                    <state key="normal" title="N"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="🌐">
+                                <attributes>
+                                    <font key="NSFont" size="15" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z7j-j5-JaA">
+                    <rect key="frame" x="153" y="20" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Cut-pK-6m4"/>
+                        <constraint firstAttribute="height" constant="30" id="yYV-W0-6Hw"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="🇿🇦">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k3G-uD-piK">
+                    <rect key="frame" x="321" y="124" width="46" height="30"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="❌">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L6d-em-Brm">
+                    <rect key="frame" x="321" y="162" width="46" height="30"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="↩️">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZvR-ku-iNG">
+                    <rect key="frame" x="54" y="20" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Nlb-dg-WKU"/>
+                        <constraint firstAttribute="height" constant="30" id="ij8-s4-9tb"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="😷">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C2m-5z-gTu">
+                    <rect key="frame" x="103" y="20" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Ibi-PU-avD"/>
+                        <constraint firstAttribute="height" constant="30" id="fym-Dy-wK2"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="💁🏼">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TTm-b3-Bce">
+                    <rect key="frame" x="203" y="20" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="8dw-2m-O2r"/>
+                        <constraint firstAttribute="height" constant="30" id="HPA-Gb-CLd"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="🐭">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Yi-3f-67o">
+                    <rect key="frame" x="252" y="20" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2wa-5T-QoL"/>
+                        <constraint firstAttribute="width" constant="30" id="hfK-07-pwz"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="💰">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T2X-hj-IUt">
+                    <rect key="frame" x="302" y="20" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="CUg-bP-TNI"/>
+                        <constraint firstAttribute="height" constant="30" id="ZBx-Nh-Al1"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="📆">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0JI-mM-5M2">
+                    <rect key="frame" x="8" y="20" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="sOd-sU-GHO"/>
+                        <constraint firstAttribute="width" constant="30" id="xHw-wm-TrM"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="👚">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mMY-t3-rXt">
+                    <rect key="frame" x="157" y="162" width="60" height="30"/>
+                    <color key="backgroundColor" red="0.57413066148682135" green="0.58760364437695733" blue="0.65735479797979801" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="space">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n2D-ct-hDV">
+                    <rect key="frame" x="164" y="58" width="30" height="30"/>
+                    <state key="normal" title="Button">
+                        <attributedString key="attributedTitle">
+                            <fragment content="💪🏾">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0d-vR-0Ew">
+                    <rect key="frame" x="218" y="58" width="30" height="30"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="🔪">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eMq-9q-TEL">
+                    <rect key="frame" x="110" y="60" width="30" height="30"/>
+                    <state key="normal" title="Button">
+                        <attributedString key="attributedTitle">
+                            <fragment content="🍴">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gai-EE-J3k">
+                    <rect key="frame" x="272" y="58" width="30" height="30"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="☔️">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Oa-27-6bA">
+                    <rect key="frame" x="54" y="58" width="30" height="30"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="🔮">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="AppleColorEmoji"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
                 </button>
             </subviews>
             <constraints>
+                <constraint firstItem="0JI-mM-5M2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="1K5-61-dhL"/>
+                <constraint firstAttribute="bottom" secondItem="mMY-t3-rXt" secondAttribute="bottom" constant="8" id="709-1v-9p8"/>
+                <constraint firstAttribute="bottom" secondItem="L6d-em-Brm" secondAttribute="bottom" constant="8" id="9JX-4I-xUV"/>
+                <constraint firstItem="C2m-5z-gTu" firstAttribute="leading" secondItem="ZvR-ku-iNG" secondAttribute="trailing" constant="20" id="9UI-k2-vFX"/>
+                <constraint firstItem="T2X-hj-IUt" firstAttribute="leading" secondItem="5Yi-3f-67o" secondAttribute="trailing" constant="20" id="D1C-ZV-uKC"/>
+                <constraint firstAttribute="trailing" secondItem="k3G-uD-piK" secondAttribute="trailing" constant="8" id="E6k-dG-alw"/>
+                <constraint firstItem="mMY-t3-rXt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="G1l-Ac-vnr"/>
+                <constraint firstItem="n2D-ct-hDV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IlN-UK-ZQz"/>
                 <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
+                <constraint firstItem="n2D-ct-hDV" firstAttribute="leading" secondItem="eMq-9q-TEL" secondAttribute="trailing" constant="20" id="MHo-Zz-8GQ"/>
+                <constraint firstItem="U0d-vR-0Ew" firstAttribute="leading" secondItem="n2D-ct-hDV" secondAttribute="trailing" constant="20" id="Zhq-KA-Flu"/>
+                <constraint firstItem="Z7j-j5-JaA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZqL-yz-jeB"/>
+                <constraint firstAttribute="trailing" secondItem="T2X-hj-IUt" secondAttribute="trailing" constant="43" id="fOK-E5-Zcg"/>
+                <constraint firstItem="5Yi-3f-67o" firstAttribute="leading" secondItem="TTm-b3-Bce" secondAttribute="trailing" constant="20" id="gjf-tF-mpa"/>
+                <constraint firstItem="Z7j-j5-JaA" firstAttribute="leading" secondItem="C2m-5z-gTu" secondAttribute="trailing" constant="20" id="iJb-YW-lOR"/>
+                <constraint firstItem="6Oa-27-6bA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="ruP-Xl-ytt"/>
+                <constraint firstItem="eMq-9q-TEL" firstAttribute="leading" secondItem="6Oa-27-6bA" secondAttribute="trailing" constant="20" id="ruY-WY-Sqo"/>
                 <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="tEE-h3-FZa"/>
+                <constraint firstItem="L6d-em-Brm" firstAttribute="top" secondItem="k3G-uD-piK" secondAttribute="bottom" constant="8" id="uCz-az-G3r"/>
+                <constraint firstItem="Gai-EE-J3k" firstAttribute="leading" secondItem="U0d-vR-0Ew" secondAttribute="trailing" constant="20" id="xMt-QT-Apb"/>
+                <constraint firstAttribute="trailing" secondItem="L6d-em-Brm" secondAttribute="trailing" constant="8" id="yIk-Ud-SkT"/>
+                <constraint firstItem="TTm-b3-Bce" firstAttribute="leading" secondItem="Z7j-j5-JaA" secondAttribute="trailing" constant="20" id="yW8-zi-KpW"/>
+                <constraint firstItem="ZvR-ku-iNG" firstAttribute="leading" secondItem="0JI-mM-5M2" secondAttribute="trailing" constant="20" id="ymi-8g-c5G"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="605.5" y="542"/>
+            <point key="canvasLocation" x="593.5" y="441"/>
         </view>
     </objects>
 </document>
